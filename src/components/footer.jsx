@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white py-8 px-6">
@@ -12,12 +12,16 @@ function Footer() {
         {/*links*/}
         <nav className="my-6 md:my-0">
           <ul className="flex space-x-6 text-lg">
+            <Link to="/">
             <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer hover:text-indigo-300 transition">
               Home
             </motion.li>
+            </Link>
+            <Link to="/explore">
             <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer hover:text-indigo-300 transition">
               Explore
             </motion.li>
+            </Link>
             <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer hover:text-indigo-300 transition">
               Categories
             </motion.li>

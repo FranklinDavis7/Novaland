@@ -15,6 +15,7 @@ function Header() {
   return (
     <header className="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white py-4 px-6 flex items-center justify-between shadow-lg z-50 relative">
       {/* Logo */}
+      <Link to="/">
       <motion.img
         src={logo}
         width="50"
@@ -22,8 +23,9 @@ function Header() {
         alt="Logo"
         className="cursor-pointer transition-transform duration-200 hover:scale-110"
         animate={{ rotate: [0, 10, -10, 0] }}
+    
       />
-
+      </Link>
       {/* Desktop Nav (Hidden on Small Screens) */}
       <nav className="hidden md:flex">
         <ul className="flex space-x-10 text-lg font-semibold">
