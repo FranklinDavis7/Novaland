@@ -44,7 +44,6 @@ function PropertyInfo() {
   };
 
   return (
-    
     <div className="relative min-h-screen text-gray-900">
       <div className="p-10 max-w-6xl mx-auto z-20">
         <h1 className="text-4xl font-bold text-center mb-6 animate-fadeIn">{property.title}</h1>
