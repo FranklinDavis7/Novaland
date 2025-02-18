@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Home, User, Settings, LogOut, DollarSign } from "lucide-react"; // Icons for menu
+import { Home, User, Settings, LogOut, DollarSign, Hand, Handshake } from "lucide-react"; // Icons for menu
+import { Paper } from "@mui/material";
 
 function Dashboard() {
   return (
@@ -10,6 +11,9 @@ function Dashboard() {
         <nav className="flex flex-col space-y-4">
           <a href="#" className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-md">
             <Home className="w-5 h-5" /> <span>My Properties</span>
+          </a>
+          <a href="#" className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-md">
+            <Handshake className="w-5 h-5" /> <span>Offers</span>
           </a>
           <a href="#" className="flex items-center space-x-3 p-2 hover:bg-indigo-700 rounded-md">
             <DollarSign className="w-5 h-5" /> <span>Transactions</span>
