@@ -6,12 +6,13 @@ import Footer from "./components/footer.jsx";
 function Home(){  
   return (
     <div className="bg-gray-50 min-h-screen text-gray-800">
-      <Header />
       <div className="flex justify-center items-center w-full h-[60vh]">
         <img src={banner} className="w-full sm:w-4/5 h-auto rounded-lg shadow-md"/>
       </div>
       <SearchBar />
-      <Footer />
+      <div className="p-4 font-bold width-full text-2xl">
+        <h1>Featured Properties</h1>
+      </div>
     </div>
     
   );
