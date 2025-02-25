@@ -1,8 +1,6 @@
 import { Bell, Search, ChevronDown } from "lucide-react";
-import Header from "./components/header.jsx";
 import banner from "./assets/banner.png";
 import SearchBar from "./components/search.jsx";
-import Footer from "./components/footer.jsx";
 import Slider from "react-slick";
 
 function Home() {  

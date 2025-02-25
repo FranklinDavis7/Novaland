@@ -60,8 +60,12 @@ function Header() {
 
       {/* Right Section (Desktop) */}
       <div className="hidden md:flex items-center space-x-4">
-        <motion.button className="bg-indigo-900 border-2 border-white text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-indigo-800" onClick={clicked} whileHover={{ scale: 1.1 }}>Sign Up</motion.button>
-        <motion.button className="bg-indigo-900 border-2 border-white text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-indigo-800" onClick={clicked} whileHover={{ scale: 1.1 }}>Log In</motion.button>
+        <Link to="/signup">
+        <motion.button className="bg-indigo-900 border-2 border-white text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-indigo-800" whileHover={{ scale: 1.1 }}>Sign Up</motion.button>
+        </Link>
+        <Link to="/signin">
+        <motion.button className="bg-indigo-900 border-2 border-white text-white font-semibold py-2 px-5 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-indigo-800" whileHover={{ scale: 1.1 }}>Log In</motion.button>
+        </Link>
         <motion.div whileHover={{ rotate: 15 }}>
           <Bell className="w-8 h-8 cursor-pointer hover:text-indigo-300" onClick={clicked} />
         </motion.div>
@@ -112,9 +116,11 @@ function Header() {
             <Link to="#" className="block py-2 hover:bg-indigo-700 rounded px-6 w-full text-center">ℹ️ About</Link>
 
             {/* Buttons in Mobile Menu */}
+            <Link to="/signup">
             <motion.button className="bg-indigo-700 border-2 border-white text-white py-2 px-5 rounded-lg hover:bg-indigo-600 mt-4 w-3/4">
               Sign Up
             </motion.button>
+            </Link>
             <motion.button className="bg-indigo-700 border-2 border-white text-white py-2 px-5 rounded-lg hover:bg-indigo-600 mt-2 w-3/4">
               Log In
             </motion.button>
