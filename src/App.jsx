@@ -8,6 +8,7 @@ import Explore from "./pages/explore";
 import Dashboard from "./pages/dashboard";
 import Signup from "./pages/Signup";
 import Signin from "./pages/signin";
+import About from "./pages/about"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/about" element={<About />}/>
         <Route path="/signin" element={<Signin />} />
         <Route path="/" element={<Home />} />
         <Route path="/property" element={<Property />} />

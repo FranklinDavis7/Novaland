@@ -6,8 +6,8 @@ import Slider from "react-slick";
 function Home() {  
   {/* Stock images */}
   const stock = [
-    "https://static.vecteezy.com/system/resources/previews/016/916/479/original/placeholder-icon-design-free-vector.jpg",
-    "https://static.vecteezy.com/system/resources/previews/016/916/479/original/placeholder-icon-design-free-vector.jpg",
+    "https://get.pxhere.com/photo/villa-house-building-home-sandstone-cottage-property-rocks-farmhouse-india-estate-log-cabin-real-estate-karnataka-rural-area-holiday-home-vacation-home-badami-982702.jpg",
+    "https://i0.wp.com/vivekkaul.com/wp-content/uploads/2021/01/architecture-1867187_1920.jpg?resize=1024%2C698&ssl=1",
   ];
 
   const sliderSettings = {
@@ -35,10 +35,10 @@ function Home() {
 
         {/* Centered Slider with Rectangle Shape */}
         <div className="flex justify-center mt-6">
-          <div className="w-4/5 sm:w-4/5 h-64"> {/* Match banner width and set fixed height */}
+          <div className="w-3/5 h-full sm:w-3/5 sm:h-3/5"> {/* Match banner width and set fixed height */}
             <Slider {...sliderSettings}>
               {stock.map((image, index) => (
-                <div key={index} className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                <div key={index} className="w-full h-72 rounded-lg overflow-hidden shadow-lg">
                   <img
                     src={image}
                     alt={`Property Image ${index + 1}`}
